@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class GarageTest {
     @Test
-    void shouldBeAbleToAddBikeInsideGarage() {
+    void shouldBeAbleToPlaceBikeInsideGarage() {
         Garage garage = new Garage();
         VehicleFactory vehicleFactory = new VehicleFactory();
 
@@ -19,7 +19,7 @@ public class GarageTest {
     }
 
     @Test
-    void shouldBeAbleToAddCarInsideGarage() {
+    void shouldBeAbleToPlaceCarInsideGarage() {
         Garage garage = new Garage();
         VehicleFactory vehicleFactory = new VehicleFactory();
 
@@ -32,7 +32,7 @@ public class GarageTest {
     }
 
     @Test
-    void shouldBeAbleToAddBusInsideGarage() {
+    void shouldBeAbleToPlaceBusInsideGarage() {
         Garage garage = new Garage();
         VehicleFactory vehicleFactory = new VehicleFactory();
 
