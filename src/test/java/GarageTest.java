@@ -11,7 +11,7 @@ public class GarageTest {
         VehicleFactory vehicleFactory = new VehicleFactory();
 
         garage.choose(vehicleFactory);
-        garage.buy(2);
+        garage.order(2);
         ArrayList<Vehicle> vehicles = garage.getVehicles();
         Vehicle bike = vehicles.get(0);
 
@@ -24,7 +24,7 @@ public class GarageTest {
         VehicleFactory vehicleFactory = new VehicleFactory();
 
         garage.choose(vehicleFactory);
-        garage.buy(4);
+        garage.order(4);
         ArrayList<Vehicle> vehicles = garage.getVehicles();
         Vehicle car = vehicles.get(0);
 
@@ -37,7 +37,7 @@ public class GarageTest {
         VehicleFactory vehicleFactory = new VehicleFactory();
 
         garage.choose(vehicleFactory);
-        garage.buy(6);
+        garage.order(6);
         ArrayList<Vehicle> vehicles = garage.getVehicles();
         Vehicle bus = vehicles.get(0);
 

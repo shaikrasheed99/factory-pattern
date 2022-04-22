@@ -12,7 +12,7 @@ public class Garage {
         this.vehicleFactory = vehicleFactory;
     }
 
-    public void buy(int wheels) {
+    public void order(int wheels) {
         Vehicle vehicle = vehicleFactory.order(wheels);
         vehicles.add(vehicle);
     }
