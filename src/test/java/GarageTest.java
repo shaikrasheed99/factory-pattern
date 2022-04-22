@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class GarageTest {
     @Test
-    void shouldBeAbleToAddBikeToGarage() {
+    void shouldBeAbleToAddBikeInsideGarage() {
         Garage garage = new Garage();
         VehicleFactory vehicleFactory = new VehicleFactory();
 
