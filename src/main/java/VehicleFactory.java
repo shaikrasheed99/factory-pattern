@@ -1,5 +1,5 @@
 public class VehicleFactory {
-    public Vehicle order(int wheels) {
+    public Vehicle create(int wheels) {
         if (wheels == 2) {
             return new Bike(wheels);
         } else if (wheels == 4) {
