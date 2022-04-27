@@ -7,17 +7,16 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class GarageTest {
     private Garage garage;
-    private VehicleFactory vehicleFactory;
 
     @BeforeEach
     void setUpGarageAndVehicleFactory() {
         garage = new Garage();
-        vehicleFactory = new VehicleFactory();
+        VehicleFactory vehicleFactory = new VehicleFactory();
+        garage.choose(vehicleFactory);
     }
 
     @Test
     void shouldBeAbleToPlaceBikeInsideGarage() {
-        garage.choose(vehicleFactory);
         garage.order(2);
         ArrayList<Vehicle> vehicles = garage.getVehicles();
         Vehicle bike = vehicles.get(0);
@@ -27,7 +26,6 @@ public class GarageTest {
 
     @Test
     void shouldBeAbleToPlaceCarInsideGarage() {
-        garage.choose(vehicleFactory);
         garage.order(4);
         ArrayList<Vehicle> vehicles = garage.getVehicles();
         Vehicle car = vehicles.get(0);
@@ -37,7 +35,6 @@ public class GarageTest {
 
     @Test
     void shouldBeAbleToPlaceBusInsideGarage() {
-        garage.choose(vehicleFactory);
         garage.order(6);
         ArrayList<Vehicle> vehicles = garage.getVehicles();
         Vehicle bus = vehicles.get(0);
