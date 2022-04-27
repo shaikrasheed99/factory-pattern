@@ -12,8 +12,8 @@ public class Garage {
         this.vehicleFactory = vehicleFactory;
     }
 
-    public void orderVehicleWithNUmberOf(WHEELS wheels) {
-        Vehicle vehicle = vehicleFactory.createVehicleWithNumberOf(wheels);
+    public void orderVehicleWithNUmberOfWheels(WHEELS wheels) {
+        Vehicle vehicle = vehicleFactory.createVehicleWithNumberOfWheels(wheels);
         vehicles.add(vehicle);
     }
 
