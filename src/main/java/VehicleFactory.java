@@ -1,5 +1,5 @@
 public class VehicleFactory {
-    public Vehicle create(WHEELS wheels) {
+    public Vehicle createVehicleWithNumberOf(WHEELS wheels) {
         if (wheels == WHEELS.BIKE_WHEELS) {
             return new Bike(wheels);
         } else if (wheels == WHEELS.CAR_WHEELS) {

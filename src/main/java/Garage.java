@@ -13,7 +13,7 @@ public class Garage {
     }
 
     public void order(WHEELS wheels) {
-        Vehicle vehicle = vehicleFactory.create(wheels);
+        Vehicle vehicle = vehicleFactory.createVehicleWithNumberOf(wheels);
         vehicles.add(vehicle);
     }
 
