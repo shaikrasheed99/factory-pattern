@@ -17,4 +17,11 @@ public class VehicleFactoryTest {
 
         assertEquals(WHEELS.BIKE_WHEELS, bike.getWheels());
     }
+
+    @Test
+    void shouldBeAbleToCreateCarWithFourWheels() {
+        Vehicle car = vehicleFactory.createVehicleWithNumberOfWheels(WHEELS.CAR_WHEELS);
+
+        assertEquals(WHEELS.CAR_WHEELS, car.getWheels());
+    }
 }
