@@ -2,6 +2,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 public class VehicleFactoryTest {
     private VehicleFactory vehicleFactory;
@@ -30,5 +31,10 @@ public class VehicleFactoryTest {
         Vehicle bus = vehicleFactory.createVehicleWithNumberOfWheels(WHEELS.BUS_WHEELS);
 
         assertEquals(WHEELS.BUS_WHEELS, bus.getWheels());
+    }
+
+    @Test
+    void shouldBeAbleToReturnNullWhenNumberOfWheelsIsNotSpecified() {
+        assertNull(vehicleFactory.createVehicleWithNumberOfWheels(WHEELS.ZERO_WHEELS));
     }
 }
