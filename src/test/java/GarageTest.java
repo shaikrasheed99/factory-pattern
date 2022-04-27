@@ -17,28 +17,28 @@ public class GarageTest {
 
     @Test
     void shouldBeAbleToPlaceBikeInsideGarage() {
-        garage.order(2);
+        garage.order(WHEELS.BIKE_WHEELS);
         ArrayList<Vehicle> vehicles = garage.getVehicles();
         Vehicle bike = vehicles.get(0);
 
-        assertEquals(2, bike.getWheels());
+        assertEquals(WHEELS.BIKE_WHEELS, bike.getWheels());
     }
 
     @Test
     void shouldBeAbleToPlaceCarInsideGarage() {
-        garage.order(4);
+        garage.order(WHEELS.CAR_WHEELS);
         ArrayList<Vehicle> vehicles = garage.getVehicles();
         Vehicle car = vehicles.get(0);
 
-        assertEquals(4, car.getWheels());
+        assertEquals(WHEELS.CAR_WHEELS, car.getWheels());
     }
 
     @Test
     void shouldBeAbleToPlaceBusInsideGarage() {
-        garage.order(6);
+        garage.order(WHEELS.BUS_WHEELS);
         ArrayList<Vehicle> vehicles = garage.getVehicles();
         Vehicle bus = vehicles.get(0);
 
-        assertEquals(6, bus.getWheels());
+        assertEquals(WHEELS.BUS_WHEELS, bus.getWheels());
     }
 }

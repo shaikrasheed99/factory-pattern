@@ -1,3 +1,3 @@
 public interface Vehicle {
-    int getWheels();
+    WHEELS getWheels();
 }

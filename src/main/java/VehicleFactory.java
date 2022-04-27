@@ -1,11 +1,11 @@
 public class VehicleFactory {
-    public Vehicle create(int wheels) {
-        if (wheels == 2) {
+    public Vehicle create(WHEELS wheels) {
+        if (wheels == WHEELS.BIKE_WHEELS) {
             return new Bike(wheels);
-        } else if (wheels == 4) {
+        } else if (wheels == WHEELS.CAR_WHEELS) {
             return new Car(wheels);
-        } else if (wheels == 6) {
-            return new Bus(6);
+        } else if (wheels == WHEELS.BUS_WHEELS) {
+            return new Bus(wheels);
         }
         return null;
     }

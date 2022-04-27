@@ -1,12 +1,12 @@
 public class Bus implements Vehicle {
-    private final int wheels;
+    private final WHEELS wheels;
 
-    public Bus(int wheels) {
+    public Bus(WHEELS wheels) {
         this.wheels = wheels;
     }
 
     @Override
-    public int getWheels() {
+    public WHEELS getWheels() {
         return wheels;
     }
 }
